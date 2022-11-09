@@ -107,6 +107,8 @@
       .auth-nav {
         display: flex;
         margin-left: auto;
+        text-align: center;
+        justify-content: center;
       }
       
       .auth-nav .item:not(:last-child) {
@@ -114,12 +116,12 @@
       }
 
       .icon-mail  {
-        fill:var(--primary-text-color);
+        fill: currentColor;
         margin-right: 10px;
          
       }
       .icon-tel {
-        fill: var(--primary-text-color);
+        fill: currentColor;
         margin-right: 10px;
       }
       .icon-mail:hover {
@@ -440,7 +442,9 @@
       .clients-nav {
         display: flex;
       }
-     
+     .clients-list {
+      margin-right: 30px;
+     }
       .clients-icon {
         display: flex;
         width: 170px;
@@ -450,15 +454,19 @@
         align-items: center;
         justify-content: center;
         fill: var(--icons-color);
-        margin-right: 30px;
       }
-
+      .nav-icon {
+        width: 106px;
+        height: 60px;
+      }
        .clients-icon:hover {
         border:1px solid var(--accent-color);
         fill: var(--accent-color);
       }
      
       /* footer */
+      .container-footer {
+        display: flex;}
 .adress a {
   font-style: normal;
 }
@@ -543,6 +551,7 @@ address {
 
 }
 
+
 .border {
   width: 44px;
   height: 44px;
@@ -560,13 +569,14 @@ address {
   background-color: var(--accent-color);
 }
 
-.list-footel-link{
+.list-footer-link{
   display: flex;
   
 }
 
 .footer-link  {
   margin-left: 70px;
+  display: inline-block;
 }
   
     
@@ -647,6 +657,11 @@ address {
         display: block;
       }
       
-      .item3:hover{
+      .item3:hover,
+      .item3:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
+      .link:focus,
+      .link:hover {
+        cursor: pointer;
       }
